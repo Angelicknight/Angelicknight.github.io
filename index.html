@@ -18,13 +18,14 @@
   display: block; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
+  padding-top: 250px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0,0,0, 0); /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
   -webkit-animation-name: fadeIn; /* Fade in the background */
   -webkit-animation-duration: 0.4s;
   animation-name: fadeIn;
@@ -33,14 +34,15 @@
 
 /* Modal Content */
 .modal-content {
-  position: fixed;
-  bottom: 0;
-  background-color: #fefefe;
+  position: relative;
+  padding: 5em 30em;
+/*  bottom: 0;*/
+/*  background-color: #fefefe;*/
   width: 100%;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
-  animation-duration: 0.4s
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1.0s;
+  animation-name: fadeIn;
+  animation-duration: 1.0s
 }
 
 /* The Close Button */
@@ -126,6 +128,7 @@
  <div class="cover-container d-flex mx-auto" style=margin-top:50px;margin-bottom:50px>
  <main class=px-3>
  <figure class=figure>
+
  <blockquote cite="https://magic.wizards.com/en/news/making-magic/state-of-design-2024" class=blockquote>
  <p>“The biggest complaint I got about this set was the power level of two cards: The One Ring and Orcish Bowmasters. Many feel they're warping the environments they're legal in and wish they would be banned. Others are concerned about our ability to reprint them. We do have the ability to do so and can even make them in-universe equivalents. The special one-of version of The One Ring was upsetting to some, although enjoyed by others.”</p>
  </blockquote>
